@@ -82,10 +82,10 @@
     <Error Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)ReliableService.dll" "$(SolutionDir)NuGet\lib\net40" /Y /I
-xcopy "$(TargetDir)ReliableService.xml" "$(SolutionDir)NuGet\lib\net40" /Y /I
-xcopy "$(TargetDir)ReliableService.dll" "$(SolutionDir)NuGet\lib\portable-net40+net40core" /Y /I
-xcopy "$(TargetDir)ReliableService.xml" "$(SolutionDir)NuGet\lib\portable-net40+net40core" /Y /I</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)ReliableWcfService.dll" "$(SolutionDir)NuGet\lib\net40" /Y /I
+xcopy "$(TargetDir)ReliableWcfService.xml" "$(SolutionDir)NuGet\lib\net40" /Y /I
+xcopy "$(TargetDir)ReliableWcfService.dll" "$(SolutionDir)NuGet\lib\portable-net40+net40core" /Y /I
+xcopy "$(TargetDir)ReliableWcfService.xml" "$(SolutionDir)NuGet\lib\portable-net40+net40core" /Y /I</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
