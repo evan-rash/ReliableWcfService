@@ -16,6 +16,33 @@ namespace ReliableWcfService.Demo
             t.Wait();
         }
 
+        private static async Task AnnoyingExampleAsync()
+        {
+            var proxy = new ServiceReference1.DemoServiceClient();
+            try
+            {
+                string data = await proxy.GetSampleDataAsync();
+                proxy.Close();
+            }
+            catch(CommunicationException)
+            {
+                proxy.Abort();
+            }
+            catch (TimeoutException)
+            {
+                proxy.Abort();
+            }
+
+        }
+
+        private static async Task BadExampleAsync()
+        {
+            using (var proxy = new ServiceReference1.DemoServiceClient())
+            {
+                string data = await proxy.GetSampleDataAsync();
+            }
+        }
+
         private static async Task DemoAsync()
         {
             Uri baseAddress = new Uri("http://localhost:8080/demo");
