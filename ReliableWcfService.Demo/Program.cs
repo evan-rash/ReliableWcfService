@@ -45,6 +45,9 @@ namespace ReliableWcfService.Demo
 
         private static async Task DemoAsync()
         {
+            //NOTE: you may need to enable this URI
+            //netsh http add urlacl url=http://+:8080/demo user=DOMAIN\user
+
             Uri baseAddress = new Uri("http://localhost:8080/demo");
 
             // Create the ServiceHost.
