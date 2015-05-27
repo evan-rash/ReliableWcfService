@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReliableWcfService", "ReliableWcfService.csproj", "{CEA5F358-D7E8-4F7C-9ECB-8CFC3D63EDBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{1978519A-E312-42D4-BE56-D41C00DF1610}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet\ReliableWcfService.nuspec = NuGet\ReliableWcfService.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEA5F358-D7E8-4F7C-9ECB-8CFC3D63EDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA5F358-D7E8-4F7C-9ECB-8CFC3D63EDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA5F358-D7E8-4F7C-9ECB-8CFC3D63EDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA5F358-D7E8-4F7C-9ECB-8CFC3D63EDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
